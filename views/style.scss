@@ -7,6 +7,7 @@ $white: #fff;
 $htmlbgcolor: #ccc;
 $bodybgcolor: #dddcd9;
 $indigo: #FF0000;
+$indig: #FF0000;
 $ahovercolor: #637094;
 $headercolor: #a09b89;
 
@@ -78,7 +79,7 @@ header h1 {
     text-decoration: none;
     display: block;
     padding: 10px;
-    background: $indigo;
+    background: $indig;
     color: $color;
     &:hover 
     {
