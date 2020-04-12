@@ -1,150 +1,106 @@
 <html>
-
 <head>
-
 <style> 
-
+	
 input[type=username] {
-
   width: 100%;
-
   padding: 12px 20px;
-
   margin: 8px 0;
-
   box-sizing: border-box;
-
   border: 3px solid #ccc;
-
   -webkit-transition: 0.5s;
-
   transition: 0.5s;
-
   outline: none;
-
 }
 
-
-
 input[type=username]:focus {
-
   border: 3px solid #555;
-
 }
 
 	input[type=password] {
-
   width: 100%;
-
  padding: 12px 20px;
-
   margin: 8px 0;
-
   box-sizing: border-box;
-
   border: 3px solid #ccc;
-
   -webkit-transition: 0.5s;
-
   transition: 0.5s;
-
   outline: none;
-
 }
 
-
-
 input[type=password]:focus {
-
   border: 3px solid #555;
-
 }
 
 	input[type=submit] {
-
   width: 100%;
-
   background-color: #4CAF50;
-
   color: white;
-
   padding: 14px 20px;
-
   margin: 8px 0;
-
   border: none;
-
   border-radius: 4px;
-
   cursor: pointer;
-
 }
 
 	input[type=submit]:hover {
-
   background-color: #45a049;
-
 }
 
 	div {
-
 		margin: 0 auto;
-
      width: 100px; 
-
 		  width: 40%;
-
-
-
   border-radius: 5px;
-
   background-color: #f2f2f2;
-
   padding: 20px;
 
 }
 
 </style>
-
 </head>
-
 <body>
 
 
 
 <div>
-
-<form>
-
-	
+<form>	
 <label for="fname">
 First Name: <input type="text" name="student[fname]" required><br>
+	<br>
 
 <label for="lname">
 Last Name: <input type="text" name="student[lname]" required><br>
+	<br>
+
+	
 
 <label for="gender">
 Gender : 
 
 Male <input type="radio" name="student[gender]" id="f-radio" value="Male" >
-Female <input type="radio" name="student[gender]" id="f-radio2" value="Female" ><br>
+Female <input type="radio" name="student[gender]" id="f-radio2" value="Female" ><br><br>
+
+	
+
+	
 
 
 <label for="bdy">
-Birthday : <input type="date" name="student[bdy]" required><br>
+Birthday : <input type="date" name="student[bdy]" required><br><br>
 
 <label for="add">
-Address: <input type="text" name="student[add]" required><br>
+Address: <input type="text" name="student[add]" required><br><br>
 
 <label for="sid">
-StudentID: <input type="text" name="student[sid]" required><br>
+StudentID: <input type="text" name="student[sid]" required><br><br>
 
 <label for="email">
-Email : <input type="email" name="student[email]" required><br>
+Email : <input type="email" name="student[email]" required><br><br>
 <br>
 
 <label for="submit">
-<input type="submit" value="Save">
+<input type="submit" value="Save"><br>
 
 </form>
 
