@@ -14,8 +14,9 @@ html {
     background-color: $htmlbgcolor;
 }
 body {
-    width:900px;
-    height:1100px;
+     width:100%;
+    min-width:1000px;
+    height:auto;
     background-color: $black;
     margin:2em auto 2em;
     padding:25px;
