@@ -46,7 +46,9 @@ header h1 {
   line-height: 185px;
   background: transparent url(/images/home.jpg) 0 0 no-repeat;
   background-size: 350px 200px;
-        left:575px;
+        float: left;
+margin-left: 0px 0px 0px 30px;
+        
   padding-left: 900px;
 }
 
