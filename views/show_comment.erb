@@ -1,0 +1,12 @@
+<h2> Comments </h2>
+<p> Name       : <%=@comment.sname%> </p>
+<p> Comment    : <%=@comment.comment%></p>
+<p> Created At : <%=@comment.created_at%> </p>    <!-- Displays the time when comment has been created -->
+<p> Updated At : <%=@comment.updated_at%></p>    <!-- Displays the time when comment has been updated -->
+
+<form action="/comments/<%=@comment.cid%>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete">
+<p> <a href="/comments">All Comments</a> </p>
+<p> <a href="/comments/<%=@comment.cid%>/edit">Edit</a> </p>
+

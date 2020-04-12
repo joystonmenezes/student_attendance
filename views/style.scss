@@ -1,0 +1,133 @@
+$red: #903;
+$crimson: #DC143C;
+$MidnightBlue: #191970;
+$darkgreen: #006400;
+$black: #000000;
+$white: #fff;
+$htmlbgcolor: #ccc;
+$bodybgcolor: #dddcd9;
+$indigo: #4B0082;
+$ahovercolor: #637094;
+$headercolor: #a09b89;
+
+html {
+    background-color: $htmlbgcolor;
+}
+body {
+    width:900px;
+    height:1100px;
+    background-color: $white;
+    margin:2em auto 2em;
+    padding:25px;
+    position:relative;
+}
+
+
+h1 {
+  color: $indigo;
+  font-family: Lobster;
+  font-size: 48px;
+  font-style: italic
+}
+
+h2 {
+  color: $crimson;
+  padding: 20px;
+  font-family: fantasy;
+  font-size: 48px;
+  font-style: italic
+}
+
+header h1 {
+  font-size: 44px;
+  line-height: 80px;
+  background: transparent url(/images/home.jpg) 0 0 no-repeat;
+  background-size: 550px 300px;
+  padding-left: 600px;
+}
+
+@mixin tabs ($background: black, $color: yellow) 
+{
+  
+  padding: 30px;
+
+  ul 
+  {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    background: $background;
+    overflow: hidden;
+  }
+
+  li 
+  {
+    float: left;
+  }
+
+  a 
+  {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: $indigo;
+    color: $color;
+    &:hover 
+    {
+      background: darken($indigo, 20%);
+    }
+  }
+}
+
+nav
+{
+  @include tabs ($background: $indigo, $color: $white);
+  font-family: cursive;
+  font-weight: bold;  
+  font-style: italic
+}
+
+nav1
+{
+  @include tabs ($background: $indigo, $color: $white);
+  font-family: cursive;
+  font-weight: bold;  
+  font-style: italic
+}
+
+p {
+  font-family: serif;
+  font-size: 18px;
+  font-style: italic;
+  padding-left: 20px;
+  color: $MidnightBlue
+}
+
+a {
+  padding-left: 20px;
+  color: $darkgreen;
+  font-family: Apple Chancery, cursive;
+  font-weight: bold;
+  font-style: italic  
+}
+
+input[type=submit] {
+    margin: 40px;
+    padding:7px 20px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 10px; 
+}
+
+input[type=text], input[type=email], input[type=date] {
+
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+}

@@ -1,0 +1,12 @@
+<h2> Comments </h2>
+<a href="/comments/new">Add New Comment</a>
+<%if @comments.any?%>
+  <ul>
+    <%@comments.each do |comment|%>
+      <li> <a href="/comments/<%=comment.cid%>"><%=comment.comment%> &nbsp; <%=comment.created_at%></a> </li>   <!-- Displays comment with timestamps  -->
+      <br>
+      <%end%>
+  </ul>
+<%else%>
+  <p> No Comments ! </p>
+<%end%>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <title>
+    <%= @title || "Welcome Student"%>
+    </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1> Student Information System  </h1>
+      <%=erb :nav1%>     <!-- navigate to this view when this layout is called -->
+      <%= yield%>
+    </header>
+  </body>
+</html>

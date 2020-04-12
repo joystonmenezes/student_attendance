@@ -1,0 +1,20 @@
+  <!-- Displays the contents of student table as Student information when clicked on particular student -->
+
+<h2> Student Details </h2>
+<p> Student    : <%=@student.fname%> <%=@student.lname%> </p>
+<p> Gender     : <%=@student.gender%> </p>
+<p> Birthday   : <%=@student.bdy%> </p>
+<p> Address    : <%=@student.add%> </p>
+<p> Student ID : <%=@student.sid%> </p>
+<p> Email	   : <%=@student.email%></p>
+
+
+<form action="/students/<%=@student.id%>" method="POST">
+  <input type="hidden" name="_method" value="Delete">      <!-- Deletes the particular student from the list -->
+  <input type="submit" value="Delete Record">
+<p> <a href="/students">Back to Student List</a> </p>
+<p> <a href="/students/<%=@student.id%>/edit">Edit Information</a> </p>
+
+
+
+

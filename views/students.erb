@@ -1,0 +1,22 @@
+<h2> Students </h2>
+
+<%if @student.any?%>
+  <ul>
+    <%@student.each do |student|%>    <!-- Check for all student data from the table Student -->
+      <%if student.gender == "Male"%>    <!-- check f the student is male or female and return the image along with the name -->
+        <img src="http://www.w3schools.com/howto/img_avatar.png" height="42" width="42"/>
+        <a href="/students/<%=student.id%>"><%=student.fname%> <%=student.lname%></a>
+        <br>
+	  <%else%>
+        <img src="http://www.w3schools.com/howto/img_avatar2.png" height="42" width="42"/>
+        <a href="/students/<%=student.id%>"><%=student.fname%> <%=student.lname%></a>
+        <br>
+      <%end%>
+      <br>
+    <%end%>
+  </ul>
+<%else%>
+  <p> No Student Records have been created yet! </p>
+<%end%>
+
+<a href="/students/new">Add New Student</a>     <!-- link for adding new student  -->
