@@ -74,7 +74,7 @@ header h1 {
 
   a 
   {
-          font-size: 45px;
+          
     text-decoration: none;
     display: block;
     padding: 10px;
@@ -98,7 +98,7 @@ nav
 nav1
 {
   @include tabs ($background: $indigo, $color: $white);
-  font-family: cursive;
+
   font-weight: bold;  
   font-style: italic
 }
