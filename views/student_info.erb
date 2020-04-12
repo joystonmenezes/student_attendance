@@ -56,6 +56,22 @@ input[type=email]:focus {
   padding: 20px;
 
 }
+	
+	input[type=date] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: #000000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+	input[type=date]:hover {
+  background-color: #45a049;
+}
+
 
 </style>
 </head>
@@ -76,9 +92,11 @@ Last Name: <input type="text" name="student[lname]" required><br>
 	
 
 <label for="gender">
-Gender : 
+Gender : <br><br>
 
-Male <input type="radio" name="student[gender]" id="f-radio" value="Male" >
+
+Male <input type="radio" name="student[gender]" id="f-radio" value="Male" ><br><br>
+
 Female <input type="radio" name="student[gender]" id="f-radio2" value="Female" ><br><br>
 
 	
