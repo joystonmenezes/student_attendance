@@ -17,7 +17,7 @@ html {
     height: 100%;
 }
 body {
-     top:200px;
+     
          margin: 0;
     height: 100%;
     padding:25px;
@@ -26,7 +26,6 @@ body {
 
 
 h1 {
-         
   color: $indigo;
   font-family: Lobster;
   font-size: 48px;
@@ -34,6 +33,7 @@ h1 {
 }
 
 h2 {
+        
   color: $crimson;
   padding: 20px;
   font-family: fantasy;
@@ -45,7 +45,7 @@ header h1 {
   font-size: 44px;
   line-height: 80px;
   background: transparent url(/images/home.jpg) 0 0 no-repeat;
-  background-size: 550px 300px;
+  background-size: 100% 900px;
   padding-left: 600px;
 }
 
