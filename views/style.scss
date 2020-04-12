@@ -63,7 +63,7 @@ header h1 {
           float: center;
     margin: 0;
    
-    padding: 5px;
+    padding: 50px;
     background: $background;
     overflow: hidden;
   }
@@ -115,9 +115,10 @@ margin: 0 auto;
 }
 
 a {
+        font-size: 15px;
   padding-left: 20px;
   color: $darkgreen;
-  font-family: Apple Chancery, cursive;
+  font-family: Apple Chancery;
   font-weight: bold;
   font-style: italic  
 }
