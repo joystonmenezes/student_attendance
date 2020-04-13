@@ -9,8 +9,8 @@ require './Student'
 DataMapper.setup(:default, ENV['DATABASE_URL']|| "sqlite3://#{Dir.pwd}/development.db")  # connecting to database
 configure do
   enable :sessions
-  set :username, "admin"
-  set :password, "admin"
+  set :username, "ccadmin"
+  set :password, "joy20071999"
 end
 
 class Comment   # define class which will be use in databse to create table and property as columns
